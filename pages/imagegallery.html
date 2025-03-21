@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<title>image Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+  background-color:crimson;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: hsl(0,0%,70%);
+  padding: 10px;
+  text-align: center;
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Portfolio Gallery</h1>
+</div>
+
+<div class="topnav">
+  <a class="active" href="#Gallery">Gallery</a>
+  <a href="../index.html">Home</a>
+</div>
+
+<!-- Photo Grid --> 
+ <div class="row">  
+  <div class="column">
+    <img src="../Images/Kemtekexpo.jpg" alt="Kemtek Expo" style="width:100%">
+    <img src="../Images/MaxmediaCTPservice.jpg" alt="Servicing CTP" style="width:100%">
+    <img src="../images/MmegiCTPscreen.jpg" alt="Screen CTP" style="width:100%">
+    <img src="../Images/melon 3D Logo.svg" alt="Design Projects" style="width:100%">
+    <img src="../Images/melon main Logo.svg" alt="Design Projects" style="width:100%">
+    <img src="../Images/Resurrection power.jpg" alt="Resurrection Power" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="../Images/Melon side Logo.svg" alt="Design Projects" style="width:100%">
+    <img src="../Images/Projects.jpg" alt="Design Projects" style="width:100%">
+    <img src="../Images/KatanaImageSetter.jpg" alt="Fuji Luxel CTP" style="width:100%">
+    <img src="../images/SundaySTDweb.jpg" alt="Web Press" style="width:100%">
+    <img src="../images/Makena Jesus Crusade.jpg" alt="Makena Jesus Crusade" style="width:100%">
+    <img src="../Images/Windhoek Jesus Crusade.jpg" alt="Windhoek Jesus Crusade" style="width:100%">
+  </div>
+</div>
+
+<div class="footer">
+  <p>
+    <a href="../index.html">Home |</a>
+    <a href="../index.html#summary">Professional Summary |</a>
+    <a href="../index.html#work">Work Experience |</a>
+    <a href="../index.html#education">Education and Qualifications |</a>
+    <a href="../index.html#skills">Skills</a>
+  </p>
+</div>
+</body>
+</html>
+
+
